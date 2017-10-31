@@ -1,0 +1,67 @@
+html,body {
+  overflow-x: hidden;
+}
+nav {
+    background-color: #4B367C;
+}
+
+button {
+    cursor: pointer;
+    cursor: hand;
+    width: 6rem;
+}
+
+.table {
+    margin-top: 0.5rem;
+    background-color: #4B367C;
+    color: white;
+    border-radius: 0.25rem;
+}
+
+.table a {
+    text-decoration: none;
+    color: white;
+}
+
+.table img {
+    width: 1.75rem;
+    height: 1.75rem;
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+   .table {
+        margin-top: 1rem;
+    } 
+    .table img {
+        width: 2rem;
+        height: 2rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+   .table {
+        margin-top: 1.5rem;
+    } 
+    .table img {
+        width: 2.25rem;
+        height: 2.25rem;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1999px) {
+   .table {
+        margin-top: 1.75rem;
+    } 
+    .table img {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .table img {
+        width: 2.75rem;
+        height: 2.75rem;
+    }
+}
+

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="https://webtechnelson.com/images/logo2.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+    
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+   
+ </head>
+ 
+  <!-- BODY-->
+<body>
+  
+  <!--NavBar-->
+  <nav class="navbar navbar-toggleable-md navbar-inverse">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="container">
+  <a class="navbar-brand" href="#"><img src="https://webtechnelson.com/images/logo.png" width="30px" height="30px" alt="logo"> Webtechnelson</a>
+  <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item active"><a class="nav-link homeLink" href="#"><i class="fa fa-home fa-lg" aria-hidden="true"></i> Home<span class="sr-only">(current)</span></a></li>
+      <li class="nav-item dropdown">
+       <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-building fa-lg" aria-hidden="true"></i> Helpful Links for this Pen</a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="https://www.youtube.com/watch?v=Le5L7tdzZd8" target="_blank"><i class="fa fa-code fa-lg" aria-hidden="true"></i> What are APIs,JSON & AJAX?</a>
+          <a class="dropdown-item" href="https://www.freecodecamp.com/challenges/get-json-with-the-jquery-getjson-method" target="_blank"><i class="fa fa-free-code-camp fa-lg" aria-hidden="true"></i> FreeCodeCamp Curriculum</a>
+          <a class="dropdown-item" href="https://dev.twitch.tv/docs/v5/reference/streams/#get-stream-by-user" target="_blank"><i class="fa fa-twitch fa-lg" aria-hidden="true"></i> Twitch API Documentation - Developer Portal</a>
+          <a class="dropdown-item" href="https://wind-bow.glitch.me" target="_blank"><i class="fa fa-free-code-camp fa-lg" aria-hidden="true"></i> FreeCodeCamp Workaround to API Key</a>
+        </div>
+      </li>
+      <li class="nav-item"><a class="nav-link homeLink" href="https://codepen.io/techednelson/" target="_blank"><i class="fa fa-briefcase fa-lg" aria-hidden="true"></i> My Other Projects</a></li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-commenting fa-lg" aria-hidden="true"></i> Contact & Feedback</a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="https://twitter.com/webtechnelson" target="_blank"><i class="fa fa-twitter-square fa-lg" aria-hidden="true"></i> Twitter</a>
+          <a class="dropdown-item" href="#"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i> info@webtechnelson.com</a>
+        </div>
+      </li>
+    </ul>
+    </div>
+  </div>
+</nav><!--/NavBar-->
+  
+  <div class="container">
+      <table class="table table-hover">
+      <thead>
+        <tr >
+          <th colspan="4" class="text-center">
+          <h3>TWITCH STREAMERS</h3><br>
+          <div class="container">
+               <button id="all" type="button" class="btn btn-outline-warning active">All</button>
+                <button id="online" type="button" class="btn btn-outline-success">Online</button>
+                <button id="offline" type="button" class="btn btn-outline-danger">Offline</button>
+          </div>
+          <div class="container d-flex justify-content-center">
+              <form class="form-inline my-2 my-lg-0">
+                  <input id="search" class="form-control mr-sm-2" type="text" placeholder="Search">
+             </form>
+             <button id="searchButton" class="btn btn-outline-info my-2 my-sm-2" type="submit">Search</button>
+          </div>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr id="row0">
+          <th><img class="rounded-circle" src="https://webtechnelson.com/images/twitchtv/sublogos/ESL.png" alt="ESL_SC2"></th>
+          <td><a href="https://www.twitch.tv/esl_sc2" target="_blank">ESL_SC2</a></td>
+          <td id="channel0"></td>
+        </tr>
+        <tr id="row1">
+          <th><img class="rounded-circle" src="https://webtechnelson.com/images/twitchtv/sublogos/ogamingsc2.png" alt="OgamingSC2"></th>
+            <td><a href="https://www.twitch.tv/ogamingsc2" target="_blank">OgamingSC2</a></td>
+          <td id="channel1"></td>
+        </tr>
+        <tr id="row2">
+          <th><img class="rounded-circle" src="https://webtechnelson.com/images/twitchtv/sublogos/cretetion.png" alt="Cretetion"></th>
+          <td><a href="https://www.twitch.tv/cretetion" target="_blank">Cretetion</a></td>
+          <td id="channel2"></td>
+        </tr>
+        <tr id="row3">
+          <th><img class="rounded-circle" src="https://webtechnelson.com/images/twitchtv/sublogos/freecodecamp.png" alt="Freecodecamp"></th>
+          <td><a href="https://www.twitch.tv/freecodecamp" target="_blank">Freecodecamp</a></td>
+          <td id="channel3"></td>
+        </tr>
+        <tr id="row4">
+          <th><img class="rounded-circle" src="https://webtechnelson.com/images/twitchtv/sublogos/storbeck.png" alt="Storbeck"></th>
+          <td><a href="https://www.twitch.tv/storbeck" target="_blank">Storbeck</a></td>
+          <td id="channel4"></td>
+        </tr>
+        <tr id="row5">
+          <th><img class="rounded-circle" src="https://webtechnelson.com/images/twitchtv/sublogos/habathcx.png" alt="Habathcx"></th>
+          <td><a href="https://www.twitch.tv/habathcx" target="_blank">Habathcx</a></td>
+          <td id="channel5"></td>
+        </tr>
+        <tr id="row6">
+          <th><img class="rounded-circle" src="https://webtechnelson.com/images/twitchtv/sublogos/robotcaleb.png" alt="RobotCaleb"></th>
+          <td><a href="https://www.twitch.tv/robotcaleb" target="_blank">RobotCaleb</a></td>
+          <td id="channel6"></td>
+        </tr>
+        <tr id="row7">
+          <th><img class="rounded-circle" src="https://webtechnelson.com/images/twitchtv/sublogos/noobs2ninjas.png" alt="Noobs2ninjas"></th>
+          <td><a href="https://www.twitch.tv/noobs2ninjas" target="_blank">Noobs2ninjas</a></td>
+          <td id="channel7"></td>
+        </tr>
+        <tr id="row8">
+          <th><img class="rounded-circle" src="https://webtechnelson.com/images/twitchtv/sublogos/unknown.png" alt="Brunofin"></th>
+          <td><a href="https://www.twitch.tv/brunofin" target="_blank">Brunofin</a></td>
+          <td id="channel8"></td>
+        </tr>
+        <tr id="row9">
+          <th><img class="rounded-circle" src="https://webtechnelson.com/images/twitchtv/sublogos/unknown.png" alt="Comster404"></th>
+          <td><a href="https://www.twitch.tv/comster404" target="_blank">Comster404</a></td>
+          <td id="channel9"></td>
+        </tr>
+      </tbody>
+    </table>
+</div>
+  
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+<script src="https://use.fontawesome.com/dfb01e1534.js"></script>
+<script src="script.js"></script>
+  </body>
+</html>
