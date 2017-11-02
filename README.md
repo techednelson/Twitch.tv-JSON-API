@@ -1,4 +1,4 @@
-# FreeCodeCamp | Intermediate Front End Development Projects
+# FreeCodeCamp-Challenge | Intermediate Front End Development Project
 
 Use the Twitchtv JSON API 
 
@@ -21,3 +21,11 @@ Hint: Here's an array of the Twitch.tv usernames of people who regularly stream:
 UPDATE: Due to a change in conditions on API usage explained here Twitch.tv now requires an API key, but we've built a workaround. Use https://wind-bow.gomix.me/twitch-api instead of twitch's API base URL (i.e. https://api.twitch.tv/kraken ) and you'll still be able to get account information, without needing to sign up for an API key.
 
 Final Project URL:  https://codepen.io/techednelson/full/zzExjr/
+
+# Contribution
+
+Pull Requests & Issues to report, fix  or enhance this project are welcome. Please follow [these steps](CONTRIBUTING.md) to contribute.
+
+# License
+
+[Licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.](https://creativecommons.org/licenses/by-sa/4.0/)
