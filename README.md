@@ -1,6 +1,6 @@
 # FreeCodeCamp-Challenge | Intermediate Front End Development Project
 
-Use the Twitchtv JSON API 
+# Use the Twitchtv JSON API 
 
 Objective: Build a CodePen.io app that is functionally similar to this: https://codepen.io/FreeCodeCamp/full/Myvqmo/.
 
